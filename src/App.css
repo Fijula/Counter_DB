@@ -1,0 +1,17 @@
+
+button{
+  margin: 2rem;
+  text-align: center;
+  justify-items: center;
+  border: 2px solid grey;
+  font-size: 20px;
+  border-radius: 20px;
+  font-size: 24px;
+  size: 2rem;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  float:center;
+  width:10rem;
+  height:4rem;
+  background-color: lightgray;
+
+}

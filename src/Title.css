@@ -1,0 +1,12 @@
+body {
+    background-image: url("https://www.pexels.com/photo/defocused-image-of-lights-255379/");
+    background-color: #cccccc;
+   }
+
+h1{
+    font-size: 5rem;
+    color:grey
+}
+span{
+    color:black
+}

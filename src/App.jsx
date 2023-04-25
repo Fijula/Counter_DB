@@ -1,27 +1,23 @@
-import { Fragment, useState } from "react";
-import "./App.css";
-import Counter from "../components/Counter";
+import React, { useEffect, useState } from 'react'
+import Title from './Title'
+import "./App.css"
+
+
 
 function App() {
-  const [count, setCount] = useState(0);
-  const onIncrement = () => {
-    setCount((prev) => (prev + 1 > 10 ? 10 : prev + 1));
-  };
-  const onDecrement = () => {
-    setCount((prev) => (prev - 1 < 0 ? 0 : prev - 1));
-  };
+const[toggle,setToggle]=useState(true)
+const username="Rahul";
 
+const handleToggle=(prev)=>{
+setToggle(!prev)
+}
   return (
-    <Fragment>
-      <div className="App">
-        <Counter
-          count={count}
-          onIncrement={onIncrement}
-          onDecremnt={onDecrement}
-        />
-      </div>
-    </Fragment>
-  );
+    <div>
+
+{toggle && <Title userName={username}/>}
+<button onClick={(()=>{handleToggle(toggle)})}>Toggle</button>
+    </div>
+  )
 }
 
-export default App;
+export default App
